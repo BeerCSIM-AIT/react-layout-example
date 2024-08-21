@@ -1,6 +1,6 @@
-import React from 'react'
-import logo from "../assets/react.svg"
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import logo from "../assets/react.svg";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,13 +14,29 @@ const Navbar = () => {
       </div>
 
       <ul className="flex space-x-4 mr-10">
-        <li><NavLink to="/" className="text-white hover:text-green-400">Home</NavLink></li>
-        <li><NavLink to="/about" className="text-white hover:text-green-400">About</NavLink></li>
-        <li><NavLink to="/products" className="text-white hover:text-green-400">Products</NavLink></li>
-        <li><NavLink to="/contact" className="text-white hover:text-green-400">Contact</NavLink></li>
+        <li>
+          <NavLink to="/" className="text-white hover:text-green-400">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/about" className="text-white hover:text-green-400">
+            About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/products" className="text-white hover:text-green-400">
+            Products
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" className="text-white hover:text-green-400">
+            Contact
+          </NavLink>
+        </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
